@@ -1,3 +1,6 @@
+options:
+  logging: NONE
+
 steps:
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['functions', 'deploy', 'hello_http', '--runtime', 'python311', '--trigger-http', '--allow-unauthenticated', '--source', '.']
